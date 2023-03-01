@@ -2,7 +2,7 @@
 
 :root{
     color: #000000;
-    font-size: 13pt;
+    font-size: 1.25em;
     font-family: 'Tahoma';
 }
 body{
@@ -79,8 +79,74 @@ body{
 }
 
 
-
 .txt__quemsou__paragrafo{
     margin: 0%;
+    margin-bottom: 70px;
     width: 75%;
+}
+
+.txt__experiencias{
+    display: flex;
+    justify-content: flex-end;
+}
+.txt__experiencias div{
+    width: 70%;
+}
+.txt__experiencias__paragrafo span{
+    color: #000491;
+}
+
+.txt__callToAction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.txt__callToAction h1{
+    font-size: 40pt;
+    text-align: center;
+}
+.txt__callToAction__buttons{
+    display: flex;
+    gap: 150px;
+    padding-top: 100px;
+}
+.callToAction__buttons__link{
+    display: flex;
+    min-height: 30px;
+    padding: 3px 50px 3px 20px;
+    border-radius: 7px;
+    font-size: 17pt;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+.callToAction__button__whats{
+    background-color: #1bd741;
+}
+.callToAction__button__insta{
+    background: linear-gradient(45deg, #c937a9 0%, #ff543e 50%, #ffdc55 100%);
+}
+.txt__callToAction__redes{
+    padding-top: 100px;
+    width: 100%;
+}
+.txt__callToAction__redes h2{
+    text-align: center;
+    font-size: 30pt;
+}
+.txt__callToAction__redes__buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.callToAction__button__face{
+    background-color: #3a559f;
+}
+.callToAction__button__linkedin{
+    background-color: #0077b7;
+}
+.callToAction__button__github{
+    background-color: #000000;
+}
+.callToAction__buttons__link span{
+    align-self: center;
 }
