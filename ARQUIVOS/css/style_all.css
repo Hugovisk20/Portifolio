@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+:root{
+    color: #000000;
+    font-size: 13pt;
+    font-family: 'Tahoma';
+}
+body{
+    margin: 0%;
+}
+
+.center-content{
+    width: 80vw;
+    margin: auto;
+}
+
+/*__________________HEADER*/
+
+.header{
+    position: fixed;
+    z-index: 1000;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    background-color: #0B132B;
+    border-bottom: 5px solid #1C2541;
+}
+.header__nav__listaMenu--paginas, .header__nav__listaMenu--redes{
+    margin: 0%;
+    margin-right: 40px;
+    display: flex;
+}
+.header__nav__listaMenu__item{
+    list-style: none;
+    margin: 0px 15px;
+}
+.header__nav__listaMenu__item--redes{
+    list-style: none;
+    margin: 0px 5px;
+}
+.listaMenu__item__link{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*________________MAIN*/
+
+.main{
+    padding-top: 85px;
+    background-color: #f2ecf3;
+    min-height: 100vh;
+}
+.main__section__article__div--img{
+    display: flex;
+    justify-content: center;
+}
+.div__img--teste{
+    width: 25vw;
+    height: 25vw;
+    margin-bottom: 200px;
+    background-color: #1C2541;
+    border-radius: 50%;
+}
+.div__img--teste::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    content: 'HUGO OTÁVIO';
+    width: 75vw;
+    height: 90px;    
+    background: linear-gradient(90deg, #f2ecf3 0%, #ffffff 15%, #ffffff 75% ,#f2ecf3 100%);
+    text-align: center;
+    font-size: 35pt;
+    transform: translate(-25vw, 25vw);
+}
+
+
+
+.txt__quemsou__paragrafo{
+    margin: 0%;
+    width: 75%;
+}
