@@ -5,6 +5,9 @@
     font-size: 1.25em;
     font-family: 'Tahoma';
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0%;
 }
@@ -107,13 +110,15 @@ body{
 }
 .txt__callToAction__buttons{
     display: flex;
-    gap: 150px;
+    width: 100%;
+    justify-content: space-around;
     padding-top: 100px;
 }
 .callToAction__buttons__link{
     display: flex;
     min-height: 30px;
     padding: 3px 50px 3px 20px;
+    margin: 20px 0px;
     border-radius: 7px;
     font-size: 17pt;
     text-align: center;
@@ -137,6 +142,7 @@ body{
 .txt__callToAction__redes__buttons{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .callToAction__button__face{
     background-color: #3a559f;
@@ -149,4 +155,40 @@ body{
 }
 .callToAction__buttons__link span{
     align-self: center;
+}
+
+
+.main__section__article__footer{
+    color: #ffffff;
+}
+.footer__div{
+    width: 100%;
+    background-color: #1C2541;
+    padding: 40px 0px;
+}
+.footer__div__div{
+    display: flex;
+    justify-content: space-around;
+}
+.footer__div__div__ul--paginas{
+    font-size: 10pt;
+    margin: 0%;
+}
+.ul__li--paginas, .ul__li--contatos, .ul__li--outros{
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.ul__li__link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+@media screen and (max-width: 690px) {
+
+    .txt__quemsou__paragrafo, .txt__experiencias div{
+        width: 100%;
+    }
+    
 }
