@@ -192,3 +192,23 @@ body{
     }
     
 }
+
+/**/
+
+.titulo__h1{
+    font-size: 35pt;
+    padding-left: 150px;
+}
+.callToAction__button--contatos{
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.callToAction__button--contatos div{
+    display: flex;
+    align-items: center;
+}
+.callToAction__button__gmail{
+    background: linear-gradient(45deg, #A62929 0%, #F2EFE4 100%);
+}
