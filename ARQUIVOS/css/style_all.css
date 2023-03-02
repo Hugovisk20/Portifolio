@@ -10,6 +10,7 @@ html{
 }
 body{
     margin: 0%;
+    background-color: #f2ecf3;
 }
 
 .center-content{
@@ -32,7 +33,8 @@ body{
     background-color: #0B132B;
     border-bottom: 5px solid #1C2541;
 }
-.header__nav__listaMenu--paginas, .header__nav__listaMenu--redes{
+.header__nav__listaMenu--paginas,
+.header__nav__listaMenu--redes{
     margin: 0%;
     margin-right: 40px;
     display: flex;
@@ -54,7 +56,6 @@ body{
 
 .main{
     padding-top: 85px;
-    background-color: #f2ecf3;
     min-height: 100vh;
 }
 .main__section__article__div--img{
@@ -174,7 +175,8 @@ body{
     font-size: 10pt;
     margin: 0%;
 }
-.ul__li--paginas, .ul__li--contatos, .ul__li--outros{
+.ul__li--paginas, .ul__li--contatos,
+.ul__li--outros{
     list-style: none;
     padding-left: 10px;
     margin-bottom: 10px;
@@ -211,4 +213,36 @@ body{
 }
 .callToAction__button__gmail{
     background: linear-gradient(45deg, #A62929 0%, #F2EFE4 100%);
+}
+
+
+/**/
+
+.article__div__divProjeto{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'img txt';
+}
+.article__div__divProjeto__bg{
+    grid-area: img;
+    min-width: 300px;
+    max-width: 300px;
+    height: 300px;
+    margin: 50px 0px;
+    background-color: #1C2541;
+    border-radius: 50%;
+}
+.article__div__divProjeto:nth-of-type(2),
+.article__div__divProjeto:nth-of-type(4),
+.article__div__divProjeto:nth-of-type(6){
+    grid-template-areas: 'txt img';
+}
+.article__div__divProjeto__textos{
+    grid-area: txt;
+    padding-left: 50px;
+}
+.divProjeto__h2{
+    margin: 0%;
+    margin-top: 100px;
 }
