@@ -277,3 +277,72 @@ body{
     margin: 0%;
     margin-top: 100px;
 }
+
+/**/
+
+.section__article__h2title{
+    font-size: 35pt;
+}
+.section__article__div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section__article__div__divcard{
+    width: 340px;
+}
+.article__div__card{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+    background-color: #3a559f;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.div__card__imgtop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+.div__card__txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c25413b;
+    color: #ffffff;
+    height: 40%;
+}
+.article__skills__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.article__skills__card__divcard{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.cards__divcard__card{
+    width: 100%;
+    height: 100%;
+    background-color: #1C2541;
+}
+.cards__divcard__cardSobreposicao{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff5e;
+    opacity: 0;
+    transition: all .2s;
+}
+.cards__divcard__cardSobreposicao:hover{
+    opacity: 1;
+}
