@@ -187,7 +187,7 @@ body{
     font-size: 12pt;
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 768px) {
 
     .txt__quemsou__paragrafo, .txt__experiencias div{
         width: 100%;
@@ -220,6 +220,7 @@ body{
 
 .article__div__divProjeto{
     display: grid;
+    justify-content: space-between;
     grid-template-rows: auto;
     grid-template-columns: auto auto;
     grid-template-areas: 'img txt';
@@ -236,6 +237,7 @@ body{
     margin: 50px 0px;
     background-color: #1C2541;
     border-radius: 50%;
+    color: #F2EFE4;
     overflow: hidden;
     transition: all .5s;
 }
@@ -272,10 +274,17 @@ body{
 .article__div__divProjeto__textos{
     grid-area: txt;
     padding-left: 50px;
+    margin-top: 60px;
 }
-.divProjeto__h2{
-    margin: 0%;
-    margin-top: 100px;
+@media screen and (max-width: 768px) {
+    .article__div__divProjeto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .article__div__divProjeto__textos{
+        margin-bottom: 70px;
+    }
 }
 
 /**/
