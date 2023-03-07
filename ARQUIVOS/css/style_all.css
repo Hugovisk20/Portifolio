@@ -64,7 +64,7 @@ body{
     display: none;
 }
 .header__nav--mobile__imgMenu{
-    padding: 10px 40px;
+    margin: 10px 40px;
 }
 .header__nav--mobile__ulItens{
     position: fixed;
@@ -90,6 +90,7 @@ body{
 
     .header__nav__listaMenu--redes{
         padding: 10px 40px;
+        flex-wrap: wrap;
     }
 
     .header__nav{
