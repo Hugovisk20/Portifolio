@@ -36,6 +36,7 @@ body{
 .header__nav__listaMenu--paginas,
 .header__nav__listaMenu--redes{
     margin: 0%;
+    padding: 0%;
     margin-right: 40px;
     display: flex;
 }
@@ -109,8 +110,19 @@ body{
     font-size: 40pt;
     text-align: center;
 }
+.callToAction__imgSeta__img{
+    animation: setaHome 2s ease-in-out infinite;
+}
+@keyframes setaHome {
+
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(50px);}
+    100% {transform: translateY(0px);}
+    
+}
 .txt__callToAction__buttons{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
     padding-top: 100px;
@@ -118,6 +130,7 @@ body{
 .callToAction__buttons__link{
     display: flex;
     min-height: 30px;
+    min-width: 200px;
     padding: 3px 50px 3px 20px;
     margin: 20px 0px;
     border-radius: 7px;
@@ -169,7 +182,8 @@ body{
 }
 .footer__div__div{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .footer__div__div__ul--paginas{
     font-size: 10pt;
@@ -201,18 +215,132 @@ body{
     font-size: 35pt;
     padding-left: 150px;
 }
-.callToAction__button--contatos{
-    cursor: pointer;
-    border-radius: 50px;
+.section__article__redes__cel{
+    padding: 10px 0px;
+    color: #ffffff;
+}
+.article__redes__cel__button{
+    position: relative;
     display: flex;
     justify-content: space-between;
+    z-index: 100;
+    cursor: pointer;
 }
-.callToAction__button--contatos div{
+.article__redes__cel__button__left{
+    display: flex;
+}
+.article__redes__cel__button__face{
+    background-color: #2554A3;
+    max-height: 48px;
+    padding: 7px 20px;
+    border-radius: 50px;
+}
+.article__redes__cel__button__insta{
+    background: linear-gradient(45deg, #c937a9 0%, #ff543e 50%, #ffdc55 100%);
+    max-height: 48px;
+    padding: 7px 20px;
+    border-radius: 50px;
+}
+.article__redes__cel__button__whats{
+    background-color: #1bd741;
+    max-height: 48px;
+    padding: 7px 20px;
+    border-radius: 50px;
+}
+.article__redes__cel__button__linkedin{
+    background-color: #0077b7;
+    max-height: 48px;
+    padding: 7px 20px;
+    border-radius: 50px;
+}
+.article__redes__cel__button__github{
+    background-color: #000000;
+    max-height: 48px;
+    padding: 7px 20px;
+    border-radius: 50px;
+}
+.article__redes__cel__button__gmail{
+    background: linear-gradient(45deg, #E51C19 0%,#F2EFE4 100%);
+    max-height: 48px;
+    padding: 7px 20px;
+    border-radius: 50px;
+}
+.button__left__span{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.article__redes__cel__button__imgSeta{
     display: flex;
     align-items: center;
 }
-.callToAction__button__gmail{
-    background: linear-gradient(45deg, #A62929 0%, #F2EFE4 100%);
+.article__redes__cel__bottom{
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: -30px;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    background-color: #1C2541;
+    color: #ffffff;
+    border-radius: 0px 0px 40px 40px;
+    transition: all .3s;
+}
+.cel__bottom__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    margin: 0px 60px;
+}
+.container__divImg__img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #c937a9;
+}
+.cel__bottom__container__sobre{
+    width: 50%;
+    height: 100%;
+}
+.container__sobre__user{
+    display: flex;
+}
+.container__sobre__friends{
+    margin-bottom: 10px;
+}
+.container__sobre__link__ancora{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0B132B;
+    border-radius: 7px;
+    padding: 5px 20px;
+}
+
+.open{
+    height: 300px;
+}
+@media screen and (max-width: 680px) {
+    .titulo__h1{
+        padding-left: 20vw;
+    }
+    .cel__bottom__container{
+        flex-direction: column;
+        height: 400px;
+        margin: 8vw;
+    }
+    .container__divImg__img{
+        width: 35vw;
+        height: 35vw;
+    }
+    .cel__bottom__container__sobre {
+        width: 100%;
+    }
+    .open{
+        height: 500px;
+    }
 }
 
 
