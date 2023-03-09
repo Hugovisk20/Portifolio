@@ -190,9 +190,17 @@ body{
 }
 .callToAction__button__whats{
     background-color: #1bd741;
+    transition: all .2s ease;
+}
+.callToAction__button__whats:hover{
+    transform: scale(1.05) translateY(-2px);
 }
 .callToAction__button__insta{
     background: linear-gradient(45deg, #c937a9 0%, #ff543e 50%, #ffdc55 100%);
+    transition: all .2s ease;
+}
+.callToAction__button__insta:hover{
+    transform: scale(1.05) translateY(-2px);
 }
 .txt__callToAction__redes{
     padding-top: 100px;
@@ -208,13 +216,25 @@ body{
     flex-wrap: wrap;
 }
 .callToAction__button__face{
-    background-color: #3a559f;
+    background-color: #2554A3;
+    transition: all .2s ease;
+}
+.callToAction__button__face:hover{
+    transform: scale(1.05) translateY(-2px);
 }
 .callToAction__button__linkedin{
     background-color: #0077b7;
+    transition: all .2s ease;
+}
+.callToAction__button__linkedin:hover{
+    transform: scale(1.05) translateY(-2px);
 }
 .callToAction__button__github{
     background-color: #000000;
+    transition: all .2s ease;
+}
+.callToAction__button__github:hover{
+    transform: scale(1.05) translateY(-2px);
 }
 .callToAction__buttons__link span{
     align-self: center;
