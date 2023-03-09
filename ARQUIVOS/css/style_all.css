@@ -14,7 +14,7 @@ body{
 }
 
 .center-content{
-    width: 80vw;
+    width: 90vw;
     margin: auto;
 }
 
@@ -40,6 +40,7 @@ body{
 .header__nav__listaMenu--redes{
     margin: 0%;
     padding: 0%;
+    padding-left: 3vw;
     margin-right: 40px;
     display: flex;
 }
@@ -233,9 +234,10 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.footer__div__div__ul--paginas{
-    font-size: 10pt;
-    margin: 0%;
+.footer__div__div__ul--pagina,
+.footer__div__div__ul--redes,
+.footer__div__div__ul--outros{
+    padding: 0%;
 }
 .ul__li--paginas, .ul__li--contatos,
 .ul__li--outros{
@@ -330,10 +332,28 @@ body{
     width: 100%;
     height: 0px;
     overflow: hidden;
-    background-color: #1C2541;
+    background-color: #1c2541;
     color: #ffffff;
     border-radius: 0px 0px 40px 40px;
-    transition: all .3s;
+    transition: all .3s cubic-bezier(0.71, 0.04, 0.12, 1.01);
+}
+.article__redes__cel__bottom--face{
+    background: linear-gradient(45deg, #2553a3 0%, #44659e 100%);
+}
+.article__redes__cel__bottom--insta{
+    background: linear-gradient(45deg, #c937a9d9 0%, #ff543ed9 50%, #ffdc55d9 100%);
+}
+.article__redes__cel__bottom--whats{
+    background: linear-gradient(45deg, #1bd741d9 0%, #52da6dd9 100%);
+}
+.article__redes__cel__bottom--linkedin{
+    background: linear-gradient(45deg, #0077b7d9 0%, #2787bbd9 100%);
+}
+.article__redes__cel__bottom--github{
+    background: linear-gradient(45deg, #000000d9 0%, #121212d9 100%);
+}
+.article__redes__cel__bottom--email{
+    background: linear-gradient(45deg, #e51c19d9 0%, #f2efe4d9 100%);
 }
 .cel__bottom__container{
     display: flex;
@@ -344,6 +364,9 @@ body{
     margin: 0px 60px;
 }
 .container__divImg__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -357,7 +380,7 @@ body{
     display: flex;
 }
 .container__sobre__friends{
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .container__sobre__link__ancora{
     color: #ffffff;
@@ -385,6 +408,7 @@ body{
     }
     .cel__bottom__container__sobre {
         width: 100%;
+        display: contents;
     }
     .open{
         height: 500px;
@@ -396,7 +420,9 @@ body{
 
 .article__div__divProjeto{
     display: grid;
+    align-items: center;
     justify-content: space-between;
+    margin: 8vw 0px;
     grid-template-rows: auto;
     grid-template-columns: auto auto;
     grid-template-areas: 'img txt';
@@ -410,7 +436,6 @@ body{
     min-width: 300px;
     max-width: 300px;
     height: 300px;
-    margin: 50px 0px;
     background-color: #1C2541;
     border-radius: 50%;
     color: #F2EFE4;
@@ -449,17 +474,26 @@ body{
 }
 .article__div__divProjeto__textos{
     grid-area: txt;
-    padding-left: 50px;
-    margin-top: 60px;
+    padding-left: 3vw;
 }
 @media screen and (max-width: 768px) {
     .article__div__divProjeto{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 20vw;
     }
     .article__div__divProjeto__textos{
-        margin-bottom: 70px;
+        padding: 0%;
+    }
+    .article__div__divProjeto__textos::after{
+        display: block;
+        content: '';
+        background-color: #000000;
+        border-radius: 3px;
+        width: 100%;
+        height: 3px;
+        margin-top: 5vw;
     }
 }
 
