@@ -20,3 +20,23 @@ window.addEventListener('scroll', () =>{
 
     })
 })
+
+/**/
+
+window.addEventListener('scroll', () => {
+    let nav = document.querySelector('.header__nav');
+    let imgRedes = document.querySelectorAll('.listaItem__item__img--redes');
+    if(window.scrollY > 150){
+        nav.classList.add('navMenor');
+    }else{
+        nav.classList.remove('navMenor');
+    }
+
+    imgRedes.forEach((e) => {
+        if(window.scrollY > 150){
+            e.classList.add('imgMenor');
+        }else{
+            e.classList.remove('imgMenor');
+        }
+    })
+})

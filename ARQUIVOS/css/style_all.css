@@ -35,6 +35,7 @@ body{
     height: 80px;
     background-color: #0B132B;
     border-bottom: 5px solid #1C2541;
+    transition: all .1s ease;
 }
 .header__nav__listaMenu--paginas,
 .header__nav__listaMenu--redes{
@@ -51,6 +52,9 @@ body{
 .header__nav__listaMenu__item--redes{
     list-style: none;
     margin: 0px 5px;
+}
+.listaItem__item__img--redes{
+    transition: all .2s ease;
 }
 .listaMenu__item__link{
     text-decoration: none;
@@ -85,6 +89,13 @@ body{
 .listaMenu__ancora{
     color: #F2EFE4;
     text-decoration: none;
+}
+
+.navMenor{
+    height: 50px;
+}
+.imgMenor{
+    width: 70%;
 }
 
 @media screen and (max-width: 768px) {
