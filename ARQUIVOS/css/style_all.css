@@ -24,18 +24,22 @@ body{
     position: fixed;
     z-index: 1000;
     width: 100%;
-    background-color: #0B132B;
     display: flex;
 }
 .header__nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100vw;
-    height: 80px;
+    height: 100px;
+    padding-top: 20px;
+    background: linear-gradient(180deg, #0b132b6c 50%, transparent 100%);
+    transition: all .3s ease;
+}
+.header__nav--mobile{
+    width: 100%;
     background-color: #0B132B;
     border-bottom: 5px solid #1C2541;
-    transition: all .1s ease;
 }
 .header__nav__listaMenu--paginas,
 .header__nav__listaMenu--redes{
@@ -59,7 +63,13 @@ body{
 .listaMenu__item__link{
     text-decoration: none;
     color: #ffffff;
+    transition: all .3s ease;
 }
+.listaMenu__item__link:hover{
+    color: #1C2541;
+}
+
+/**/
 
 .openMobile{
     transform: translateX(-100%);
@@ -92,10 +102,11 @@ body{
 }
 
 .navMenor{
-    height: 50px;
+    height: 70px;
+    padding-top: 10px;
 }
 .imgMenor{
-    width: 70%;
+    width: 85%;
 }
 
 @media screen and (max-width: 768px) {
@@ -116,7 +127,7 @@ body{
 /*________________MAIN*/
 
 .main{
-    padding-top: 85px;
+    padding-top: 50px;
     min-height: 100vh;
 }
 .main__section__article__div--img{
@@ -293,6 +304,9 @@ body{
 
 @media screen and (max-width: 768px) {
 
+    .main{
+        padding-top: 77px;
+    }
     .txt__quemsou__paragrafo, .txt__experiencias div{
         width: 100%;
     }
